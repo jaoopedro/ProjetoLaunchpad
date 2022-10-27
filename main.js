@@ -18,7 +18,7 @@ while (contador < listadeTeclas.length){
     
     const instrumento = tecla.classList[1];
 
-    //template string
+                    //template string
     const idAudio = `#som_${instrumento}`
 
     console.log(idAudio)
