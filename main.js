@@ -14,9 +14,8 @@ for (let contador = 0; contador < listadeTeclas.length; contador++){
     const tecla = listadeTeclas[contador]
     
     const instrumento = tecla.classList[1];
-
-                    //template string
-    const idAudio = `#som_${instrumento}`
+                   
+    const idAudio = `#som_${instrumento}`//template string
 
     console.log(idAudio)
 
@@ -24,7 +23,8 @@ for (let contador = 0; contador < listadeTeclas.length; contador++){
     tecla.onclick = function(){
         tocaSom(idAudio)
     }
-    
+
     //contador = contador + 1 foi colocado dentro do parametro for 'contador++'
 
  } 
+ 
