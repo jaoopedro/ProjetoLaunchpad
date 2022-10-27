@@ -10,7 +10,7 @@ function tocaSom (idElementoAudio) {
 const listadeTeclas = document.querySelectorAll('.tecla'); // o queryselectorAll serve para selecionar todos os elementos de um class ou tag especifica
 
 //enquanto == while
-for (let contador = 0; contador < listadeTeclas.length; ){   
+for (let contador = 0; contador < listadeTeclas.length; contador++){   
     const tecla = listadeTeclas[contador]
     
     const instrumento = tecla.classList[1];
@@ -25,6 +25,6 @@ for (let contador = 0; contador < listadeTeclas.length; ){
         tocaSom(idAudio)
     }
     
-    contador = contador + 1
+    //contador = contador + 1 foi colocado dentro do parametro for 'contador++'
 
  } 
