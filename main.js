@@ -1,5 +1,17 @@
-function tocaSom (idElementoAudio) {
-    document.querySelector(idElementoAudio).play();
+function tocaSom (seletorAudio) {
+    const elemento = document.querySelector(seletorAudio);
+
+                       //e
+    if (elemento != null && elemento.localName === 'audio'){
+       
+        elemento.play();
+    
+    }
+
+    else{
+        //alert('Elemento nao encontrado')
+        console.log('Elemento não encontrado ou seletor invalido!')
+    }
 }
 
 //com o 'const' determonamos o valor/variavel constante ( fundamento para lidar com listas)
@@ -21,7 +33,7 @@ for (let contador = 0; contador < listadeTeclas.length; contador++){
 
     tecla.onkeydown = function(evento){  //onkeydown é um evento para quando cliar em uma tecla no caso a tecla estiver abaixada
                                 //OU
-        if (evento.code==='Space' || evento.code === 'NumpadEnter') {
+        if (evento.code==='Space' || evento.code === 'Enter') {
             tecla.classList.add('ativa');
         }
 
